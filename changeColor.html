@@ -1,0 +1,13 @@
+{% extends "Playground.html" %}
+
+{% block content %}
+<style>
+    .box{
+        background-color: var(--color);
+    }
+</style>
+{% for x in range(repeat): %}
+<div class="box" style="--color: {{ mycolor }};"></div>
+{% endfor %}
+
+{% endblock %}
